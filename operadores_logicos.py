@@ -9,9 +9,19 @@ print("el valor del resultado de operar con not es", y) # type: ignore
 
 
 #ejemplo 2: operador and 
-y = True and True
+a = True
+b = True
+y = a and b
 print("El resultado de operar con and es: ", y) # type: ignore
 
 #ejemplo 2: operador and 
-y=  False and True 
+a = False
+b = True
+y = a and b
 print("El resultado de operar con and es: ", y) # type: ignore
+
+#ejemplo 3: operador or
+a = False
+b = False
+y = a or b
+print("El resultado de operar con or es: ", y) # type: ignore
