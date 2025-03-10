@@ -1,49 +1,29 @@
-'''
-Operdores Logicos Aquellos que operan unicamente 
-con valores boleacos (True o False ) (V or F )
-acorde a las tablas de verdad
+# Ejemplo 1: Operador not
+y = not True
+print("El valor del resultado de operar con not es:", y)  # Output: False
 
-'''
-#Ejemplo 1; Operador not:y= not True 
-print("el valor del resultado de operar con not es", y) # type: ignore
-
-
-#ejemplo 2: operador and 
+# Ejemplo 2: Operador and
 a = True
 b = True
 y = a and b
-print("El resultado de operar con and es: ", y) # type: ignore
+print("El resultado de operar con and es:", y)  # Output: True
 
-#ejemplo 2: operador and 
+# Ejemplo 3: Operador and
 a = False
 b = True
 y = a and b
-print("El resultado de operar con and es: ", y) # type: ignore
+print("El resultado de operar con and es:", y)  # Output: False
 
-#ejemplo 3: operador or
+# Ejemplo 4: Operador or
 a = False
 b = False
 y = a or b
-print("El resultado de operar con or es: ", y) # type: ignore
+print("El resultado de operar con or es:", y)  # Output: False
 
-'''
-jerarquia de predencia de operadores 
-(logicos inclusive)
-1. ()
-2. **
-3. *, /, //, %
-4. +, -
-5. ==, !=, >, <, >=, <=
-6. not
-7. and
-8. or
-'''
-
-#ejemplo 4  jerarquia de operadores 
+# Jerarquía de precedencia de operadores
 y = False and not True or False
-print("El resultado de operar con jerarquia de operadores es: ", y) # type: ignore 
+print("El resultado de operar con jerarquía de operadores es:", y)  # Output: False
 
-
-#ejemplos 5 : relacionales y logicos
-
-y = not 3 > 4 and 4 == 4 or 3 < 2
+# Ejemplo 5: Relacionales y lógicos
+y = not (3 > 4 and 4 == 4 or 3 < 2)  # Corrected expression
+print("El resultado de operar con relacionales y lógicos es:", y)  # Output: True
